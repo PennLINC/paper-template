@@ -24,7 +24,7 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Install flake8 and related packages
-        run: python -m pip install -R python_requirements.txt
+        run: python -m pip install -r python_requirements.txt
       - name: Check the repository's Python code
         run: python -m flake8 .
       - name: Check the repository's Jupyter notebooks
