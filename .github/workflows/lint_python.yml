@@ -28,4 +28,4 @@ jobs:
       - name: Check the repository's Python code
         run: python -m flake8 .
       - name: Check the repository's Jupyter notebooks
-        run: python -m nbqa flake8 *.ipynb
+        run: python -m nbqa flake8 **/*.ipynb
